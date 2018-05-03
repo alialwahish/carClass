@@ -6,6 +6,10 @@ class Car(object):
         self.mileage=mileage
         self.tax=0.12
 
+        if self.price > 10000:
+            self.tax = .15
+        
+
     def display_all(self):
         print "Price:",self.price
         print "Speed:",self.speed 
@@ -14,7 +18,7 @@ class Car(object):
         print "Tax:",self.tax
         
 
-bmw=Car(2000,"5mph","Full","15mpg")
+bmw=Car(20000,"5mph","Full","15mpg")
 
         
 bmw.display_all()
